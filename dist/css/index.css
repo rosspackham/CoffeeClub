@@ -48,6 +48,18 @@ body {
   line-height: 135px;
 }
 
+#nav li a:hover {
+  background-color: rgb(253, 177, 63);
+  transition-duration: 0.5s;
+}
+
+#nav a:hover {
+  animation-duration: 3s;
+  animation-name: linkcolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 #coffeelogo {
   align-content: center;
   width: 75px;
@@ -62,4 +74,41 @@ body {
   font-size: 20px;
   line-height: 150px;
   padding-right: 50px;
+}
+
+#coffeeclub a:hover {
+  animation-duration: 3s;
+  animation-name: linkcolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes linkcolor {
+  0% {
+    color: rgb(230, 173, 17);
+  }
+  50% {
+    color: rgb(238, 225, 51);
+  }
+  75% {
+    color: rgb(177, 238, 34);
+  }
+  100% {
+    color: rgb(252, 250, 251);
+  }
+}
+
+@keyframes logosizer {
+  0% {
+    background-color: rgb(238, 225, 51);
+  }
+  50% {
+    background-color: rgb(238, 225, 51);
+  }
+  75% {
+    background-color: rgb(177, 238, 34);
+  }
+  100% {
+    background-color: rgb(252, 250, 251);
+  }
 }
